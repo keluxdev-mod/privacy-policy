@@ -134,43 +134,45 @@
 
 <div class="container">
     <h1>Privacy Policy</h1>
-    <div class="effective-date">Effective Date: October 3, 2026</div>
+    <div class="effective-date">Effective Date: November 7, 2026</div>
 
-    <p>This privacy policy applies to the <strong>NoMoreShorts - Focus & Blocker</strong> app for mobile devices, operated by Kelux (collectively, the "Service Provider").</p>
+    <p>This privacy policy applies to the <strong>NoMoreShorts - Focus &amp; Blocker</strong> app for Android devices (the "Application"), operated by Kelux (the "Service Provider").</p>
 
     <div class="zero-data-box">
-        <h2>1. Zero Data Collection Policy</h2>
-        <p>The Application is designed with user privacy as a primary feature.</p>
+        <h2>1. Summary</h2>
         <ul>
-            <li>The Application <strong>DOES NOT</strong> collect, process, transmit, store, or share any personal data, sensitive user information, location data, or device identifiers.</li>
-            <li>The Application <strong>DOES NOT</strong> track user activity, usage statistics, or browsing behavior.</li>
-            <li>No user accounts, logins, or personal details are required or requested to use the Application.</li>
+            <li><strong>100% no screen data collected.</strong> The Accessibility permission never records, stores or transmits your screen content, messages, keystrokes or personal information.</li>
+            <li>The Service Provider (Kelux) does not run any servers and <strong>does not collect, receive or store</strong> any personal data from the Application.</li>
+            <li>No user accounts, logins or personal details are required.</li>
         </ul>
     </div>
 
-    <h2>2. Local On-Device Data Storage</h2>
-    <p>All application features, including your preferences, schedules, timers, and operational logs, are stored strictly and locally on your own mobile device (via local SharedPreferences).</p>
-    <p>This data never leaves your device and is not accessible by the Service Provider or any external servers. Uninstalling the Application or clearing its app data will permanently remove all locally stored preferences.</p>
+    <h2>2. Data Stored on Your Device</h2>
+    <p>Your settings, timers, schedules and activity log are stored only on your own device (in local app storage). The Service Provider never receives this data.</p>
+    <p>If Android's own backup feature is turned on for your device, Android may include this app data in your device backup to your personal Google account. This backup is managed by Android and Google, not by the Service Provider, and you can turn it off in your device settings.</p>
+    <p>Uninstalling the Application or clearing its app data permanently removes this locally stored data.</p>
 
     <div class="highlight-box">
-        <h2>3. Use of Accessibility API (AccessibilityService)</h2>
-        <p>The Application utilizes Android's AccessibilityService API solely to provide its core functionality of detecting and blocking short-form videos (such as YouTube Shorts).</p>
-        
-        <p><strong>Specifically, the AccessibilityService API is used to:</strong></p>
+        <h2>3. Use of the Accessibility API (AccessibilityService)</h2>
+        <p>The Application uses Android's AccessibilityService API solely to provide its core feature: detecting and leaving the YouTube Shorts screen.</p>
+
+        <p><strong>Specifically, the AccessibilityService is used to:</strong></p>
         <ul>
-            <li>Detect when short-form video player components are active on your screen.</li>
-            <li>Automatically perform a navigate-back or scroll action to return you to your main feed or previous screen based on your enabled blocking settings.</li>
+            <li>Receive events only from the YouTube app (and from the Application itself, to check that the service is running).</li>
+            <li>Check the structure of the YouTube screen (for example, the identifier of the Shorts player view) to recognise when a Shorts screen is open.</li>
+            <li>Perform a "Back" action to leave the Shorts screen, according to your protection settings.</li>
         </ul>
 
-        <p><strong>Data Privacy regarding Accessibility API:</strong></p>
+        <p><strong>Data privacy regarding the Accessibility API:</strong></p>
         <ul>
-            <li>The AccessibilityService operates 100% locally on your device in real-time.</li>
-            <li>It <strong>DOES NOT</strong> collect, record, log, read, store, or transmit any personal information, screen text, messages, keystrokes, or media content.</li>
-            <li>It is strictly used for performing the video blocking action defined by the user.</li>
+            <li>All of this happens 100% locally on your device, in real time, in memory.</li>
+            <li>It <strong>DOES NOT</strong> collect, record, log, store or transmit any personal information, screen text, messages, keystrokes or media content.</li>
+            <li>No data obtained through the Accessibility API is shared with the Service Provider or any third party.</li>
+            <li>You can turn the service off at any time in your device's Accessibility settings.</li>
         </ul>
     </div>
 
-    <h2>4. Third-Party Services & Ads</h2>
+    <h2>4. Third-Party Services &amp; Ads</h2>
     <p>The Application integrates Google AdMob to display advertisements. AdMob operates independently under Google's Privacy Policy.</p>
     <p>The Service Provider (Kelux) does not collect, receive, store, or process any personal data or advertising identifiers from AdMob. Any technical information processed by Google AdMob to serve ads is governed directly by Google's policies:</p>
     <ul>
@@ -178,12 +180,15 @@
     </ul>
 
     <h2>5. Children's Privacy</h2>
-    <p>Because the Application does not collect any personal information from any user, it does not knowingly collect or solicit personal data from children under any age.</p>
+    <p>The Application is not directed at children under the age of 13, and the Service Provider does not knowingly collect personal information from children. If you believe a child has provided personal information through the Application, please contact us using the address below.</p>
 
-    <h2>6. Security</h2>
-    <p>Because no personal data is collected or transmitted to external servers, your data privacy is inherently protected against external network breaches or remote server unauthorized access.</p>
+    <h2>6. Data Retention and Deletion</h2>
+    <p>Data stored on your device is kept until you clear the app data or uninstall the Application.</p>
 
-    <h2>7. Changes to This Privacy Policy</h2>
+    <h2>7. Security</h2>
+    <p>The Service Provider does not operate servers that receive or store your data, so your on-device data is not exposed to breaches of the Service Provider's systems.</p>
+
+    <h2>8. Changes to This Privacy Policy</h2>
     <p>The Service Provider may update this Privacy Policy from time to time. Any changes will be posted on this page with an updated effective date.</p>
 
     <div class="contact-box">
