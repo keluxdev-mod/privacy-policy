@@ -134,7 +134,7 @@
 
 <div class="container">
     <h1>Privacy Policy</h1>
-    <div class="effective-date">Effective Date: November 7, 2026</div>
+    <div class="effective-date">Effective Date: November 25, 2026</div>
 
     <p>This privacy policy applies to the <strong>NoMoreShorts - Focus &amp; Blocker</strong> app for Android devices (the "Application"), operated by Kelux (the "Service Provider").</p>
 
@@ -148,19 +148,21 @@
     </div>
 
     <h2>2. Data Stored on Your Device</h2>
-    <p>Your settings, timers, schedules and activity log are stored only on your own device (in local app storage). The Service Provider never receives this data.</p>
+    <p>Your settings, timers, schedules, activity log and the lists of YouTube channels and Instagram profiles you choose to block are stored only on your own device (in local app storage). The Service Provider never receives this data.</p>
     <p>If Android's own backup feature is turned on for your device, Android may include this app data in your device backup to your personal Google account. This backup is managed by Android and Google, not by the Service Provider, and you can turn it off in your device settings.</p>
     <p>Uninstalling the Application or clearing its app data permanently removes this locally stored data.</p>
 
     <div class="highlight-box">
         <h2>3. Use of the Accessibility API (AccessibilityService)</h2>
-        <p>The Application uses Android's AccessibilityService API solely to provide its core feature: detecting and leaving the YouTube Shorts screen.</p>
+        <p>The Application uses Android's AccessibilityService API solely to provide its core feature: detecting the sections you chose to block on YouTube and Instagram and closing them. These are YouTube Shorts, Instagram Reels and the optional extra features you turn on yourself (for example comments, stories, search, Explore, the home feed, Reels in the feed, or channels and profiles on your block list).</p>
 
         <p><strong>Specifically, the AccessibilityService is used to:</strong></p>
         <ul>
-            <li>Receive events only from the YouTube app (and from the Application itself, to check that the service is running).</li>
-            <li>Check the structure of the YouTube screen (for example, the identifier of the Shorts player view) to recognise when a Shorts screen is open.</li>
-            <li>Perform a "Back" action to leave the Shorts screen, according to your protection settings.</li>
+            <li>Receive events only from the YouTube and Instagram apps (and from the Application itself, to check that the service is running).</li>
+            <li>Check the structure of the YouTube or Instagram screen (for example, the identifier of the Shorts or Reels player view, or which tab is selected) to recognise when a section you chose to block is open.</li>
+            <li>Only if you turn on the channel or profile blocker: read the channel name shown on the YouTube video page, or the username at the top of an Instagram profile, and compare it with the list you typed in the Application. This comparison happens on your device and the name is not kept.</li>
+            <li>Perform a "Back" action, switch to another tab, scroll the feed, or cover that part of the screen to close the section, according to your settings.</li>
+            <li>Only if you turn on "Watch the first Short" or "Watch Reels sent to you": place a layer over the video that stops scrolling to the next one, and pass your taps through to the video.</li>
         </ul>
 
         <p><strong>Data privacy regarding the Accessibility API:</strong></p>
